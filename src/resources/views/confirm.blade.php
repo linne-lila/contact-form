@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+@extends('layouts.app')
 
-    <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}">
+@section('css')
     <link rel="stylesheet" href="{{ asset('css/confirm.css') }}">
-</head>
+@endsection
 
-<body>
-    <header class="header">
-        <div class="header__inner">
-            <a class="header__logo" href="/">
-                Contact Form
-            </a>
-        </div>
-    </header>
-
-    <main>
+@section('content')
         <div class="confirm__content">
             <div class="confirm__heading">
                 <h2>お問い合わせ内容確認</h2>
@@ -63,7 +49,4 @@
                 </div>
             </form>
         </div>
-    </main>
-</body>
-
-</html>
+@endsection
